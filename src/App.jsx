@@ -80,7 +80,7 @@ const App = () => {
                             </div>
                         </div>
                         <p className="experience-title-end">Faculdades Metropolitanas Unidas - FMU</p>
-                        <div className="experience-list">
+                        <div className="experience-list space-b50">
                             <ul className="list justify">
                                 <li className="monospace">Developed strong problem-solving skills through continuous practice in programming and logic challenges
                                 </li>
@@ -95,8 +95,13 @@ const App = () => {
             </div>
 
             <div className="section" id="projects">
-                a
-                <Wave color="#070b1a"/>
+                <div className="projects-wrapper">
+                    <p className={"title space-t30 space-b50"}>Projects</p>
+                    <div className="projects-list">
+                        <div className="project-item">a</div>
+                    </div>
+                </div>
+                <Wave color="#060a14"/>
             </div>
 
             <div className="section" id="contacts">

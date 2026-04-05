@@ -111,3 +111,20 @@
     }
   }
 }
+#projects{
+  @include sec.projects-background;
+  min-height: 80vh;
+  .projects-wrapper{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-list{
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    width: 40rem;
+    border-radius: 4rem;
+    background: darkred;
+  }
+}
