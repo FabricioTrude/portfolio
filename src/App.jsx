@@ -1,11 +1,12 @@
 import React from 'react';
+import {FaBook, FaBuilding} from "react-icons/fa";
 
 import useMouseLight from "./hooks/useMouseLight.jsx";
 
 import Wave from "./components/Wave.jsx";
+import Cards from "./components/Cards.jsx";
 
 import './styles/main.scss';
-import {FaBook, FaBuilding} from "react-icons/fa";
 const App = () => {
     useMouseLight();
 
@@ -97,12 +98,11 @@ const App = () => {
             <div className="section" id="projects">
                 <div className="projects-wrapper">
                     <p className={"title space-t30 space-b50"}>Projects</p>
-                    <div className="projects-list">
-                        <div className="project-item">a</div>
-                    </div>
+                    <Cards/>
                 </div>
                 <Wave color="#060a14"/>
             </div>
+
             <div className="section" id="contacts">
                 a
                 <Wave color="#070b1a"/>
