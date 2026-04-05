@@ -1,0 +1,38 @@
+@mixin presentation {
+  background:
+    radial-gradient(
+      circle at 85% 90%,
+      rgba(80, 200, 255, 0.12),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 70% 80%,
+      rgba(40, 150, 220, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      140deg,
+      #070b1a 10%,
+      #081226 25%,
+      #0a1c33 50%,
+      #0d2740 70%,
+      #123a52 85%,
+      #1a4d66 100%
+    );
+}
+@mixin normal-background{
+  background-color: #040d1a;
+  background-image:
+    linear-gradient(
+      180deg,
+      #070b1a 0%,
+      #040d1a 50%,
+      #08112b 80%,
+      #0c1833 85%
+    );
+}
+@mixin end-background{
+  background:
+    radial-gradient(circle at 50% 50%, #1a1a3a22, transparent 40%),
+    #080812;
+}

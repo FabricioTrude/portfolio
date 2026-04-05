@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.title-start {
+  margin-left: 5rem;
+}
+
+.text-start {
+  margin-left: 2.5rem;
+}

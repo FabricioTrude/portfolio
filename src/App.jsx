@@ -4,8 +4,8 @@ import useMouseLight from "./hooks/useMouseLight.jsx";
 
 import Wave from "./components/Wave.jsx";
 
-import './App.css';
-import {FaBuilding} from "react-icons/fa";
+import './styles/main.scss';
+import {FaBook, FaBuilding} from "react-icons/fa";
 const App = () => {
     useMouseLight();
 
@@ -15,71 +15,90 @@ const App = () => {
                 <div className="presentation">
                     <div className="hovers">
                         <div className="hover">A</div>
-                            <div className="hover">B</div>
+                        <div className="hover">B</div>
                         <div className="hover">C</div>
                         <div className="hover">D</div>
                     </div>
                     <p id="hey" className={"title"}>Welcome! I'm</p>
-                    <p id="name">Fabrício Alves Trude</p>
-                    <p id="study">Computer Engineer Student, <span id="grey" >React and JavaScript enthusiast!</span> </p>
+                    <p className={"giga bold"}>Fabrício Alves Trude</p>
+                    <p id="study" className={"big"}>Computer Engineer Student, <span className="grey" >React and JavaScript enthusiast!</span> </p>
                 </div>
                 <Wave color="#070b1a"/>
             </div>
+
             <div className="section" id="about">
                 <div className="about">
                     <div className="about-title">
                         <p className="title">A</p>
-                        <p className="title" style={{color: "white"}}>bout me</p>
+                        <p className="title white">bout me</p>
                     </div>
-                    <div className="about-content">
-                        <span id="grey" ><span id={"text-start"}/> Hello, I'm Fabrício Trude, or just Fatrude! I am 20 and a new developer, I have gathered experience through the projects I made for College and Classes, I'm currently in 5th Semester of University and I haven't made any big project yet, but I give all of me in every project I do! My expertise lies within <span id={"cyan"}>React and JavaScript</span>, but I made many projects in C for College, soon enough  I will be specializing myself in <span id={"text-start"}/><span id={"cyan"}>Java</span> too!         I  value <span id={"purple"}>cleanness, creativity and high-quality code</span>, I am extremely passionate about making aesthetically pleasing websites and apps that truly impact those whom utilize it </span>
-                    </div>
-                </div>
-                <Wave color="#070b1a"/>
-            </div>
-            <div className="section" id="experiences_education">
-                <div className="wrapper">
-                    <div id="experiences">
-                        <div className="experience">
-                        <p className={"title"}>Experiences & Education</p>
-                            <p className="title">Experience</p>
-                            <div className="experience-title">
-                                <div className="experience-icon">
-                                    <FaBuilding />
-                                </div>
-                                <div className="experience-title-content">
-                                    <p className="experience-name" id={"cyan"}>Bilingual Content Moderation Expert</p>
-                                    <p className="experience-time monospace">2024 Oct - Present</p>
-                                </div>
-                            </div>
-                                <p className="experience-title-end">Social Media</p>
-                            <div className="experience-list">
-                                <ul className="list">
-                                    <li className="monospace">Reviewed and analyzed over 100,000+ cases across diverse and sensitive contexts</li>
-                                    <li className="monospace">Developed high accuracy, speed and attention to detail under pressure and strict time conditions</li>
-                                    <li className="monospace">Quickly adapted to constantly evolving policies and tools with minimal downtime</li>
-                                    <li className="monospace">Worked closely with team members to maintain alignment and improve decision  consistency</li>
-                                    <li className="monospace">Built strong resilience and emotional control while working under constant change and high workload</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="education">
-                        <div className="education">
-                            <h2>Education</h2>
-                            <div className="education-title">
-                                <h3>Bachelor of Science in Computer Engineering</h3>
-                                <p>2021 - 2025</p>
-                            </div>
-                        </div>
+                    <div className="about-content justify">
+                        <span className="grey" ><span className={"title-start"}/> Hello, I'm Fabrício Trude, or just Fatrude! I am 20, a new developer, and currently on my  5th semester of University I have gathered experience through making projects for both College and other classes/courses.<br/>
+                        <span className="text-start"/>I give all of me in every project I do! My expertise lies within <span className={"cyan"}>React and JavaScript</span>, I've also done many projects in <span className="cyan">C</span>, and recently I've been working on sharpening my <span className={"cyan"}>Java</span> skills <br/>
+                        <span className="text-start"/>I  value <span className={"purple"}>cleanliness, creativity and high-quality code</span>, I am extremely passionate about making aesthetically pleasing websites and apps that truly impact those who utilize it </span>
                     </div>
                 </div>
                 <Wave color="#070b1a"/>
             </div>
+
+            <div className="section" id="experiences">
+                <div className="section-wrapper">
+                    <p className={"title"}>Experiences & Education</p>
+                    <div className="experience-wrapper">
+                        <p className="big white bold space-b20">Experience</p>
+
+                        <div className="experience-title">
+                            <div className="experience-icon">
+                                <FaBuilding />
+                            </div>
+                            <div className="experience-title-content">
+                                <p className="experience-name">Bilingual Content Moderation Expert</p>
+                                <p className="experience-time monospace">2024 Oct - Present</p>
+                            </div>
+                        </div>
+                        <p className="experience-title-end">Social Media - Teleperformance</p>
+                        <div className="experience-list">
+                            <ul className="list justify">
+                                <li className="monospace">Reviewed and analyzed over 100,000+ cases across diverse and sensitive contexts</li>
+                                <li className="monospace">Developed high accuracy, speed and attention to detail under pressure and strict time conditions</li>
+                                <li className="monospace">Quickly adapted to constantly evolving policies and tools with minimal downtime</li>
+                                <li className="monospace">Worked closely with team members to maintain alignment and improve decision  consistency</li>
+                                <li className="monospace">Built strong resilience and emotional control while working under constant change and high workload</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="experience-wrapper" id="education">
+                        <p className={"big white bold space-b20"}>Education</p>
+                        <div className="experience-title">
+                            <div className="experience-icon">
+                                <FaBook/>
+                            </div>
+                            <div className="experience-title-content">
+                                <p className="experience-name">Bachelor in Computer Engineering</p>
+                                <p className="experience-time monospace">2024 - late 2028</p>
+                            </div>
+                        </div>
+                        <p className="experience-title-end">Faculdades Metropolitanas Unidas - FMU</p>
+                        <div className="experience-list">
+                            <ul className="list justify">
+                                <li className="monospace">Developed strong problem-solving skills through continuous practice in programming and logic challenges
+                                </li>
+                                <li className="monospace">Built academic projects in C, Python, Java and Assembly</li>
+                                <li className="monospace">Applied theoretical concepts such as data structures and algorithms into practical coding exercises
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <Wave color="#070b1a"/>
+            </div>
+
             <div className="section" id="projects">
                 a
                 <Wave color="#070b1a"/>
             </div>
+
             <div className="section" id="contacts">
                 a
                 <Wave color="#070b1a"/>
