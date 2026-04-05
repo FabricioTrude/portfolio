@@ -103,7 +103,6 @@ const App = () => {
                 </div>
                 <Wave color="#060a14"/>
             </div>
-
             <div className="section" id="contacts">
                 a
                 <Wave color="#070b1a"/>
