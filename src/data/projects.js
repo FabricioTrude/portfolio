@@ -13,7 +13,7 @@ const projects = {
 
     javascript: [
         {
-            name: "JavaScript Snake",
+            name: "JavaScriptSnake",
             description: "Snake game made in JavaScript using LocalStorage, with many different fruits and effects and upgrdes!",
             link: "https://fabriciotrude.github.io",
             images: [

@@ -1,4 +1,4 @@
-@mixin presentation {
+@mixin presentation_background {
   background:
     radial-gradient(
       circle at 85% 90%,
@@ -20,7 +20,7 @@
       #1a4d66 100%
     );
 }
-@mixin normal-background{
+@mixin section_background {
   background-color: #040d1a;
   background-image:
     linear-gradient(
@@ -31,7 +31,7 @@
       #0c1833 85%
     );
 }
-@mixin projects-background{
+@mixin projects_background {
   background-color: #040d1a;
   background-image:
     linear-gradient(
@@ -41,4 +41,31 @@
       #050812 80%,
       #050812 85%
     );
+}
+
+@mixin card-blue {
+  background:
+    linear-gradient(
+      225deg,
+      rgba(80, 140, 255, 0.25) 0%,
+      rgba(80, 140, 255, 0.1) 4%,
+      transparent 7%
+    ),
+    linear-gradient(
+      220deg,
+      #0c1324 0%,
+      #0a0f1d 60%,
+      #050812 100%
+    );
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  flex-direction: column;
+  height: 25rem;
+  border-radius: 2rem;
+  &:hover{
+    box-shadow: 0 10px 40px rgba(106, 236, 217, 0.2);
+    transform: translateY(-6px) scale(1.05);
+    transition: 0.3s ease;
+  }
 }
