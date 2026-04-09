@@ -6,7 +6,6 @@
 :root {
   --mouse-x: 100%;
   --mouse-y: 100%;
-  cursor: none;
 }
 
 * {
@@ -14,4 +13,51 @@
   margin: 0;
   font-family: Bai Jamjuree, sans-serif;
   color:white;
+  cursor: none;
+}
+
+body {
+  transition: transform 0s ease;
+  &::before{
+    content: "";
+    position: fixed;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: top 0s linear, left 0s linear;
+    background: radial-gradient(circle, rgba(200, 200, 255, 0.15) 0%, transparent 70%);
+    z-index: 999;
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    top: var(--mouse-y, 50%);
+    left: var(--mouse-x, 50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    pointer-events: none;
+
+    background: radial-gradient(circle, rgba(200, 200, 255, 0.2) 0%, transparent 60%);
+    opacity: 0.5;
+
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+
+    z-index: 9998;
+  }
+
+  &:has(.card-buttons svg:hover)::after {
+    opacity: 1;
+  }
+  &.grabbing{
+    &::after{
+      background: radial-gradient(circle, rgba(200, 200, 255, 0.2) 0%, transparent 70%);
+      opacity: 1;
+    }
+  }
 }

@@ -13,43 +13,15 @@
   flex-direction: column;
   background-color: #040d1a;
   background-image:
-          radial-gradient(circle at 85% 90%, rgba(80, 200, 255, 0.12), transparent 20%),
-          radial-gradient(circle at 70% 80%, rgba(40, 150, 220, 0.08), transparent 30%),
-          linear-gradient(
-                          180deg,
-                          #040d1a 10%,
-                          #08112b 25%,
-                          #0a1c3d 50%,
-                          #0d2748 70%,
-                          #123a52 85%,
-                          #1a4d66 100%
-          );
-  &::before{
-    content: "";
-    position: fixed;
-    top: var(--mouse-y);
-    left: var(--mouse-x);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: top 0s linear, left 0s linear;
-    background: radial-gradient(circle, rgba(200, 200, 255, 0.15) 0%, transparent 70%);
-    z-index: 999;
-  }
-  &::after{
-    content: "";
-    position: fixed;
-    top: var(--mouse-y, 50%);
-    left: var(--mouse-x, 50%);
-    width: 120px;                 /* bolinha maior e difusa */
-    height: 120px;
-    border-radius: 50%;
-    pointer-events: none;
-    background: radial-gradient(circle, rgba(200, 200, 255, 0.08) 0%, transparent 80%);
-    transform: translate(-50%, -50%);
-    transition: top 0s linear, left 0s linear;
-    z-index: 9998; /* atrás da bolinha menor */
-  }
+    radial-gradient(circle at 85% 90%, rgba(80, 200, 255, 0.12), transparent 20%),
+    radial-gradient(circle at 70% 80%, rgba(40, 150, 220, 0.08), transparent 30%),
+    linear-gradient(
+      180deg,
+      #040d1a 10%,
+      #08112b 25%,
+      #0a1c3d 50%,
+      #0d2748 70%,
+      #123a52 85%,
+      #1a4d66 100%
+    );
 }

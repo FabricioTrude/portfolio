@@ -45,27 +45,12 @@
 
 @mixin card-blue {
   background:
-    linear-gradient(
-      225deg,
-      rgba(80, 140, 255, 0.25) 0%,
-      rgba(80, 140, 255, 0.1) 4%,
-      transparent 7%
-    ),
-    linear-gradient(
-      220deg,
-      #0c1324 0%,
-      #0a0f1d 60%,
-      #050812 100%
-    );
+          linear-gradient(225deg, rgba(80, 140, 255, 0.15), transparent),
+          linear-gradient(220deg, #0c1324, #050812);
   position: relative;
-  overflow: hidden;
-  transition: 0.3s ease;
-  flex-direction: column;
   height: 25rem;
   border-radius: 2rem;
-  &:hover{
-    box-shadow: 0 10px 40px rgba(106, 236, 217, 0.2);
-    transform: translateY(-6px) scale(1.05);
-    transition: 0.3s ease;
-  }
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
